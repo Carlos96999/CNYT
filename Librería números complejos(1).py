@@ -1,10 +1,11 @@
 from sys import stdin
 import math
+import random
 
 def Fase(c1,c2):
-
-    angulo1 = math.atan2(c1[1],c1[0])
-    angulo2 = math.atan2(c2[1],c2[0])
+    
+    angulo1 = math.atan(c1[1]/c1[0])
+    angulo2 = math.atan(c2[1]/c2[0])
     print("Fase")
     print(math.degrees(angulo1))
     print(math.degrees(angulo2))
@@ -15,8 +16,8 @@ def ConverCartePola(c1,c2):
     p1 = (c1[0]*c1[0] + c1[1]*c1[1])**(1/2)
     p2 = (c2[0]*c2[0] + c2[1]*c2[1])**(1/2)
     print("Convertir cartesiano a polar")
-    angulo1 = math.atan2(c1[1],c1[0])
-    angulo2 = math.atan2(c2[1],c2[0])
+    angulo1 = math.atan(c1[1]/c1[0])
+    angulo2 = math.atan(c2[1]/c2[0])
     print("p = {0} angulo = {1}".format(p1,math.degrees(angulo1)))
     print("p = {0} angulo = {1}".format(p2,math.degrees(angulo2)))
     print()
@@ -26,9 +27,14 @@ def Conjugado(complejo1,complejo2):
     complejo1[1] *= -1
     complejo2[1] *= -1
     print("Conjugado")
-    print(complejo1)
-    print(complejo2)
-    print()
+    ParteReal = complejo1[0]
+    ParteImagi = complejo1[1]
+    Imprimir(ParteReal,ParteImagi)
+    ParteReal = complejo1[0]
+    ParteImagi = complejo1[1]
+    Imprimir(ParteReal,ParteImagi)
+    complejo1[1] *= -1
+    complejo2[1] *= -1
     
 def Modulo(c1,c2):
 
@@ -52,9 +58,8 @@ def Division(c1,c2):
     
 def Resta(c1,c2):
 
-    ParteReal = c1[0] + c2[0]
-    ParteImagi = c1[1] + c2[1]
-    #print(ParteReal,ParteImagi)
+    ParteReal = c1[0] - c2[0]
+    ParteImagi = c1[1] - c2[1]
     print("Resta")
     Imprimir(ParteReal,ParteImagi)
     
@@ -64,7 +69,6 @@ def Producto(c1,c2):
     ParteImagi = c1[0]*c2[1]+c1[1]*c2[0]+c1[1]*c2[1]
     print("Producto")
     Imprimir(ParteReal,ParteImagi)
-    #print("C = {0} {1}i".format(ParteReal,ParteImagi))
     
 def Suma(c1,c2):
 
@@ -87,16 +91,21 @@ def Imprimir(ParteReal,ParteImagi):
     
 def main():
 
-    c1 = [int(x) for x in stdin.readline().strip().split()]
-    c2 = [int(x) for x in stdin.readline().strip().split()]
-    c3 = (0,1)
-    Suma(c1,c2)
-    Producto(c1,c2)
-    Resta(c1,c2)
-    Division(c1,c2)
-    Modulo(c1,c2)
-    Conjugado(c1,c2)
-    ConverCartePola(c1,c2)
-    Fase(c1,c2)
-
+    for i in range(8):
+        real = random.randrange(-40,40)
+        imaginario = random.randrange(-40,40)
+        c1 = [real,imaginario]
+        real = random.randrange(-40,40)
+        imaginario = random.randrange(-40,40)
+        c2 = [real,imaginario]
+        Suma(c1,c2)
+        Producto(c1,c2)
+        Resta(c1,c2)
+        Division(c1,c2)
+        Modulo(c1,c2)
+        Conjugado(c1,c2)
+        ConverCartePola(c1,c2)
+        Fase(c1,c2)
+        print(c1,c2,"Estos son los complejos")
 main()
+
