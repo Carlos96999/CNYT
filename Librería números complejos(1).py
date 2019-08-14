@@ -98,6 +98,12 @@ def main():
         real = random.randrange(-40,40)
         imaginario = random.randrange(-40,40)
         c2 = [real,imaginario]
+
+        while c1[0] == 0 or c2[0] == 0:
+            real = random.randrange(-40,40)
+            c1[0] = real
+            c12[0] = real
+            
         Suma(c1,c2)
         Producto(c1,c2)
         Resta(c1,c2)
