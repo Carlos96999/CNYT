@@ -1,4 +1,4 @@
-# Calculadora Números complejos
+# Calculadora números complejos
 Este programa muestra el resultado de unas operaciones realizadas con números complejos que son estas.
 
 
