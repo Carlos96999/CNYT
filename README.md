@@ -11,7 +11,7 @@ Este programa muestra el resultado de unas operaciones realizadas con números c
    módulo,
    conjugado,
    conversión de cartesiano a polar y
-   fase
+   fase.
    
    
    
