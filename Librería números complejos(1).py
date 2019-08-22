@@ -3,23 +3,46 @@ import math
 import random
 
 def Fase(c1,c2):
-    
-    angulo1 = math.atan(c1[1]/c1[0])
-    angulo2 = math.atan(c2[1]/c2[0])
+
     print("Fase")
-    print(math.degrees(angulo1))
-    print(math.degrees(angulo2))
+    
+    if c1[0] != 0:
+        angulo1 = math.atan(c1[1]/c1[0])
+        print(math.degrees(angulo1))
+    else:
+        print("No se puede dividir en cero",c1)
+    if c2[0] != 0:
+        angulo2 = math.atan(c2[1]/c2[0])
+        print(math.degrees(angulo2))
+    else:
+        print("No se puede dividir en cero",c2)    
     print()
+
+def ConverPolaCarte(a,b):
+
+    print("Convertir polar a cartesiano")
+
+    ParteReal = a*math.cos(b)
+    ParteImagi = a*math.sin(b)
+    Imprimir(ParteReal,ParteImagi)
+
     
 def ConverCartePola(c1,c2):
 
-    p1 = (c1[0]*c1[0] + c1[1]*c1[1])**(1/2)
-    p2 = (c2[0]*c2[0] + c2[1]*c2[1])**(1/2)
     print("Convertir cartesiano a polar")
-    angulo1 = math.atan(c1[1]/c1[0])
-    angulo2 = math.atan(c2[1]/c2[0])
-    print("p = {0} angulo = {1}".format(p1,math.degrees(angulo1)))
-    print("p = {0} angulo = {1}".format(p2,math.degrees(angulo2)))
+    
+    if c1[0] != 0:
+        p1 = (c1[0]*c1[0] + c1[1]*c1[1])**(1/2)
+        angulo1 = math.atan(c1[1]/c1[0])
+        print("p = {0} angulo = {1}".format(p1,math.degrees(angulo1)))
+    else:
+        print("No se pede dividir entre cero",c1)
+    if c2[0] != 0:
+        p2 = (c2[0]*c2[0] + c2[1]*c2[1])**(1/2)
+        angulo2 = math.atan(c2[1]/c2[0])
+        print("p = {0} angulo = {1}".format(p2,math.degrees(angulo2)))
+    else:
+        print("No se puede dividir entre cero",c2)
     print()
     
 def Conjugado(complejo1,complejo2):
@@ -98,11 +121,6 @@ def main():
         real = random.randrange(-40,40)
         imaginario = random.randrange(-40,40)
         c2 = [real,imaginario]
-
-        while c1[0] == 0 or c2[0] == 0:
-            real = random.randrange(-40,40)
-            c1[0] = real
-            c12[0] = real
             
         Suma(c1,c2)
         Producto(c1,c2)
@@ -111,6 +129,9 @@ def main():
         Modulo(c1,c2)
         Conjugado(c1,c2)
         ConverCartePola(c1,c2)
+        r = random.randrange(-40,40)
+        angulo = random.randrange(-40,40)
+        ConverPolaCarte(r,angulo)
         Fase(c1,c2)
         print(c1,c2,"Estos son los complejos")
 main()
