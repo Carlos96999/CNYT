@@ -57,4 +57,5 @@ El uso de esta librería te puede ayudar a rectificar operaciones entre complejo
   # p = \sqrt{\left(R<sup>2</sup> + i<sup>2</sup>\right)}
   # \theta = tan<sup>-1</sup>\left($$\frac{i}{R}$$
   
-   fase.
+ # Fase
+  # \theta = tan<sup>-1</sup>\left($$\frac{i}{R}$$
