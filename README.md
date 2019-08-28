@@ -25,14 +25,14 @@ El uso de esta librería te puede ayudar a rectificar operaciones entre complejo
  # Operaciones
  Las operaciones de elementos complejos se realiza con las siguientes formulas:
  # Suma  
-  # C<sup>1</sup> = R<sup>1</sub> + i<sup>1</sub>
-  # C<sup>2</sup> = R<sup>2</sub> + i<sup>2</sub>
-  # C<sup>r</sup> = (R<sup>1</sub> + R<sup>2</sub>, i<sup>1</sub> + i<sup>2</sub>)
+  # C<sub>1</sub> = R<sup>1</sub> + i<sup>1</sub>
+  # C<sub>2</sub> = R<sup>2</sub> + i<sup>2</sub>
+  # C<sub>r</sub> = (R<sup>1</sub> + R<sup>2</sub>, i<sup>1</sub> + i<sup>2</sub>)
   
  # Resta
-  # C<sup>1</sup> = R<sup>1</sub> + i<sup>1</sub>
-  # C<sup>2</sup> = R<sup>2</sub> + i<sup>2</sub>
-  # C<sup>r</sup> = (R<sup>1</sub> - R<sup>2</sub>, i<sup>1</sub> - i<sup>2</sub>)
+  # C<sub>1</sub> = R<sup>1</sub> + i<sup>1</sub>
+  # C<sub>2</sub> = R<sup>2</sub> + i<sup>2</sub>
+  # C<sub>r</sub> = (R<sup>1</sub> - R<sup>2</sub>, i<sup>1</sub> - i<sup>2</sub>)
   
  # División
   # C<sup>1</sup> = R<sup>1</sub> + i<sup>1</sub>
