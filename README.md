@@ -25,24 +25,24 @@ El uso de esta librería te puede ayudar a rectificar operaciones entre complejo
  # Operaciones
  Las operaciones de elementos complejos se realiza con las siguientes formulas:
  # Suma  
-  # C<sup>1</sub> = R<sup>1</sub> + i<sup>1</sub>
-  # C<sup>2</sub> = R<sup>2</sub> + i<sup>2</sub>
-  # C<sup>r</sub> = (R<sup>1</sub> + R<sup>2</sub>, i<sup>1</sub> + i<sup>2</sub>)
+  # C<sup>1</sup> = R<sup>1</sub> + i<sup>1</sub>
+  # C<sup>2</sup> = R<sup>2</sub> + i<sup>2</sub>
+  # C<sup>r</sup> = (R<sup>1</sub> + R<sup>2</sub>, i<sup>1</sub> + i<sup>2</sub>)
   
  # Resta
-  # C<sup>1</sub> = R<sup>1</sub> + i<sup>1</sub>
-  # C<sup>2</sub> = R<sup>2</sub> + i<sup>2</sub>
-  # C<sup>r</sub> = (R<sup>1</sub> - R<sup>2</sub>, i<sup>1</sub> - i<sup>2</sub>)
+  # C<sup>1</sup> = R<sup>1</sub> + i<sup>1</sub>
+  # C<sup>2</sup> = R<sup>2</sub> + i<sup>2</sub>
+  # C<sup>r</sup> = (R<sup>1</sub> - R<sup>2</sub>, i<sup>1</sub> - i<sup>2</sub>)
   
  # División
-  # C<sup>1</sub> = R<sup>1</sub> + i<sup>1</sub>
-  # C<sup>2</sub> = R<sup>2</sub> + i<sup>2</sub>
-  # C<sup>r</sub> = \frac{R<sub>1</sub>xR<sub>2</sub> + i<sub>1</sub>xi<sub>2</sub>}{(R<sub>2</sub>)<sup>2</sup> + (i<sub>2</sub>)<sup>2</sup>} + <\frac{R<sub>2</sub>xi<sub>1</sub> - R<sub>1</sub>xi<sub>2</sub>}{(R<sub>2</sub>)<sup>2</sup> + (i<sub>2</sub>)<sup>2</sup>}>
+  # C<sup>1</sup> = R<sup>1</sub> + i<sup>1</sub>
+  # C<sup>2</sup> = R<sup>2</sub> + i<sup>2</sub>
+  # C<sup>r</sup> = \frac{R<sub>1</sub>xR<sub>2</sub> + i<sub>1</sub>xi<sub>2</sub>}{(R<sub>2</sub>)<sup>2</sup> + (i<sub>2</sub>)<sup>2</sup>} + \frac{R<sub>2</sub>xi<sub>1</sub> - R<sub>1</sub>xi<sub>2</sub>}{(R<sub>2</sub>)<sup>2</sup> + (i<sub>2</sub>)<sup>2</sup>}
  
  # Multiplicación
-  # C<sup>1</sub> = R<sup>1</sub> + i<sup>1</sub>
-  # C<sup>2</sub> = R<sup>2</sub> + i<sup>2</sub>
-  # C<sup>r</sub> = (R<sub>1</sub>xR<sub>2</sub>, R<sub>1</sub>xi<sub>2</sub> + i<sub>1</sub>xR<sub>2</sub> + i<sup>1</sub>xi<sup>2</sub>)
+  # C<sup>1</sup> = R<sup>1</sub> + i<sup>1</sub>
+  # C<sup>2</sup> = R<sup>2</sub> + i<sup>2</sub>
+  # C<sup>r</sup> = (R<sub>1</sub>xR<sub>2</sub>, R<sub>1</sub>xi<sub>2</sub> + i<sub>1</sub>xR<sub>2</sub> + i<sup>1</sub>xi<sup>2</sub>)
   
  # Módulo
   # C = R + i
