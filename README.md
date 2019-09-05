@@ -1,10 +1,10 @@
 # Calculadora de números complejos
-Este programa muestra el resultado de unas operaciones realizadas con números complejos las cuales son; suma, resta, división, multiplicación, módulo, conjugado, conversión de cartesiano a polar y viceversa, por último la fase del número complejo.
+Este programa muestra el resultado de unas operaciones realizadas con números complejos las cuales son; suma, resta, división, multiplicación, módulo, conjugado, conversión de cartesiano a polar y viceversa, por último la fase del número complejo. También realizara operaciones haciendo uso de vectores y matrices.
 
 
 
 # Instalación
-Debes tener instalado el programa ****python**** en su última versión para poder hacer uso de la librería; al descargarlo lo abres con el editor de python y ahí puedes empezar a realizar tus pruebas correspondientes.
+Debes tener instalado el programa ****python**** en su última versión para poder hacer uso de la librería. Puedes descargarlo del siguiente enlace https://www.python.org/downloads/; al descargarlo lo abres con el editor de python y ahí puedes empezar a realizar tus pruebas correspondientes.
 
 
 
