@@ -16,8 +16,9 @@ Para las operaciones de un solo número complejo se requiere que ingreses uno de
 
 # Análisis de pruebas
 El uso de esta librería te puede ayudar a rectificar operaciones entre complejos ya sea para estudio o solo conocimiento. Al hacer el uso de las fórmulas correctas hay una completa confianza sobre el resultado.
-
-
+\n
+Para hacer uso de las pruebas de unidad debes seguir los siguientes pasos:
+ 1. 
 # Operaciones
  Las operaciones de elementos complejos se realiza con las siguientes formulas:
  # Suma  
