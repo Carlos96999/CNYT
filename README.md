@@ -1,6 +1,6 @@
 # Calculadora de números complejos
 Este programa muestra el resultado de unas operaciones realizadas con números complejos las cuales son:
-  - Suma                           - Conjugado
+  - Suma                           - $\n$ Conjugado
   - Resta                          - Conversión cartesiano a polar
   - Producto                       - Conversión polar a cartesiano
   - División                       - Fase
