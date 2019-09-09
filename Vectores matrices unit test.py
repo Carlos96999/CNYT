@@ -21,6 +21,8 @@ class TestMyModule(unittest.TestCase):
         self.assertEqual(Librería_vectores_matrices.MatrizConjugada([[(1,2),(3,4),(5,-6)],[(7,-8),(2,-4),(9,3)],[(6,8),(7,-5),(2,6)]]),[[(1,-2),(3,-4),(5,6)],[(7,8),(2,4),(9,-3)],[(6,-8),(7,5),(2,-6)]])
     def test_MatrAdj(self):
         self.assertEqual(Librería_vectores_matrices.MatrizAdjunta([[(1,2),(2,-3),(3,4)],[(4,-5),(5,6),(6,-7)],[(7,8),(8,-9),(9,10)]]),[[(1,-2),(4,5),(7,-8)],[(2,3),(5,-6),(8,9)],[(3,-4),(6,7),(9,-10)]])
+    def test_AccMaVe(self):
+        self.assertEqual(Librería_vectores_matrices.AccionMatrizVector([[(-3,0),(5,0),(-6,0)],[(7,0),(10,0),(-1,0)]],[(-6,0),(-2,0),(5,0)]),[(-22,0),(-67,0)])
     def test_NormMatr(self):
         self.assertEqual(Librería_vectores_matrices.NormaMatriz([[(1,2),(2,-3),(3,4)],[(4,-5),(5,6),(6,-7)],[(7,8),(8,-9),(9,10)]]),25.865034312755125)
     def test_DistMatr(self):

@@ -85,6 +85,25 @@ def MatrizAdjunta(matriz):
     respuesta = MatrizConjugada(respuesta)
     return respuesta
 
+def AccionMatrizVector(matriz,vector):
+
+    respuesta = []
+
+    if len(matriz[0]) == len(vector):
+        suma = (0,0)
+
+        for i in range(len(matriz)):
+            for j in range(len(matriz[i])):
+                temporal = Librería_números_complejos.Producto(matriz[i][j],vector[j])
+                suma = Librería_números_complejos.Suma(temporal,suma)
+                
+            respuesta.append(suma)
+            suma = (0,0)
+
+        return respuesta
+    else:
+        return "Dimensiones incorrectas"
+    
 def NormaMatriz(matriz):
 
     respuesta = 0
