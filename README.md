@@ -1,20 +1,31 @@
 # Calculadora de números complejos
 Este programa muestra el resultado de unas operaciones realizadas con números complejos las cuales son:
-  - Suma                           - $\n$ Conjugado
-  - Resta                          - Conversión cartesiano a polar
-  - Producto                       - Conversión polar a cartesiano
-  - División                       - Fase
+  - Suma
+  - Resta
+  - Conjugado
+  - Producto
+  - División
   - Modulo.
+  - Conversión cartesiano a polar                       
+  - Conversión polar a cartesiano                         
+  - Fase  
   
 También fueron agregadas operaciones entre vectores y matrices:
-  - Suma de vectores                                        - Matriz adjunta
-  - Inverso de un vector                                    - Acción de una matriz sobre un vector
-  - Producto de un escalar por un vector                    - Norma de una matriz
-  - Suma de matrices                                        - Distancia de una matriz
-  - Inversa de una matriz                                   - Matriz unitaria
-  - Producto de un escalar por una matriz                   - Matriz hermitania
-  - Matriz transpuesta                                      - Producto tensor
-  - Matriz conjugada
+  - Suma de vectores
+  - Inverso de un vector
+  - Producto de un escalar por un vector
+  - Suma de matrices
+  - Inversa de una matriz
+  - Producto de un escalar por una matriz
+  - Matriz transpuesta
+  - Matriz conjugada  
+  - Matriz adjunta                                      
+  - Acción de una matriz sobre un vector                      
+  - Norma de una matriz                                          
+  - Distancia de una matriz                                     
+  - Matriz unitaria                     
+  - Matriz hermitania                                        
+  - Producto tensor  
 
 # Instalación
 Debes tener instalado el programa ****python**** en su última versión para poder hacer uso de la librería. Puedes descargarlo del siguiente enlace https://www.python.org/downloads/; al descargarlo vuelves a este enlace y clonas el repositorio, lo abres con el editor de python y ahí puedes empezar a realizar tus pruebas correspondientes.
