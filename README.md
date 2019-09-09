@@ -1,16 +1,18 @@
 # Calculadora de números complejos
-Este programa muestra el resultado de unas operaciones realizadas con números complejos las cuales son; suma, resta, división, multiplicación, módulo, conjugado, conversión de cartesiano a polar y viceversa, por último la fase del número complejo. También realizara operaciones haciendo uso de vectores y matrices.
+Este programa muestra el resultado de unas operaciones realizadas con números complejos las cuales son; suma, resta, división, multiplicación, módulo, conjugado, conversión de cartesiano a polar y viceversa, por último la fase del número complejo. También realizara operaciones haciendo uso de vectores y matrices; como la suma, el inverso, producto escalar por un vector y matriz, matriz transpuesta, conjugada, adjunta entre otros.
 
 
 
 # Instalación
-Debes tener instalado el programa ****python**** en su última versión para poder hacer uso de la librería. Puedes descargarlo del siguiente enlace https://www.python.org/downloads/; al descargarlo lo abres con el editor de python y ahí puedes empezar a realizar tus pruebas correspondientes.
+Debes tener instalado el programa ****python**** en su última versión para poder hacer uso de la librería. Puedes descargarlo del siguiente enlace https://www.python.org/downloads/; al descargarlo vuelves a este enlace y clonas el repositorio, lo abres con el editor de python y ahí puedes empezar a realizar tus pruebas correspondientes.
 
 
 
 # Ejecutando las pruebas
-Al ejecutar la librería ingresarás el primer número complejo especificando el signo si es negativo, de lo contrario no se hace; al terminar de ingresar el dato presionarás la tecla "enter" y digitas el siguiente número complejo con el cual deseas realizar la operación.
-Para las operaciones de un solo número complejo se requiere que ingreses uno de los dos datos o si deseas un dato nuevo.
+ 1. Abrir con el editor de python los archivos con nombre terminado en ****unit test****. 
+ 2. Ingresar los datos a probar; la estructura para las pruebas unitarias es la siguiente:
+  self.assertEqual(Librería_números_complejos.Función de la cual deseas realizar la prueba(parametro 1, parametro2),          respuesta que debería dar la operación).
+ 3. Ejecutar el programa, si la respuesta estuvo escrita correctamente el programa mostrará un ok con el tiempo que duró la ejecución.
 
 
 
@@ -21,43 +23,53 @@ Para hacer uso de las pruebas de unidad debes seguir los siguientes pasos:
  1. 
 # Operaciones
  Las operaciones de elementos complejos se realiza con las siguientes formulas:
- # Suma  
-  # C<sub>1</sub> = R<sub>1</sub> + i<sub>1</sub>
-  # C<sub>2</sub> = R<sub>2</sub> + i<sub>2</sub>
-  # C<sub>r</sub> = (R<sub>1</sub> + R<sub>2</sub>, i<sub>1</sub> + i<sub>2</sub>)
+ ****Los números complejos están identificados como c1 y c2, el cual es una tupla de la siguiente forma (parte real, parte imaginaría) la parte real como [0] y la imaginaría [1]****
+ ****Los vectores complejos están identificados como v1 y v2****
+ 
+ # Suma 
+   ParteReal = c1[0] + c2[0]
+   ParteImagi = c1[1] + c2[1]
+  
   
  # Resta
-  # C<sub>1</sub> = R<sub>1</sub> +        i<sub>1</sub>
-  # C<sub>2</sub> = R<sub>2</sub> +        i<sub>2</sub>
-  # C<sub>r</sub> = (R<sub>1</sub> -       R<sub>2</sub>, i<sub>1</sub> - i<sub>2</sub>)
+   ParteReal = c1[0] - c2[0]
+   ParteImagi = c1[1] - c2[1]
   
  # División
-  # C<sup>1</sup> = R<sup>1</sub> +        i<sub>1</sub>
-  # C<sup>2</sup> = R<sup>2</sub> +        i<sub>2</sub>
-  # C<sup>r</sup> = \frac{R<sub>1</sub>xR<sub>2</sub> + i<sub>1</sub>xi<sub>2</sub>}{(R<sub>2</sub>)<sup>2</sup> + (i<sub>2</sub>)<sup>2</sup>} + \frac{R<sub>2</sub>xi<sub>1</sub> - R<sub>1</sub>xi<sub>2</sub>}{(R<sub>2</sub>)<sup>2</sup> + (i<sub>2</sub>)<sup>2</sup>}
+   NumerReal = c1[0]*c2[0] + c1[1]*c2[1]
+   DenomReal = c2[0]*c2[0] + c2[1]*c2[1]
+  
+   NumerImagi = c2[0]*c1[1] - c1[0]*c2[1]
+   DenomImagi = c2[0]*c2[0] + c2[1]*c2[1]
  
  # Multiplicación
-  # C<sup>1</sup> = R<sup>1</sub> +        i<sub>1</sub>
-  # C<sup>2</sup> = R<sup>2</sub> +        i<sub>2</sub>
-  # C<sup>r</sup> = (R<sub>1</sub>xR<sub>2</sub>, R<sub>1</sub>xi<sub>2</sub> + i<sub>1</sub>xR<sub>2</sub> + i<sub>1</sub>xi<sub>2</sub>)
+   ParteReal = c1[0]*c2[0]-c1[1]*c2[1]
+   ParteImagi = c1[0]*c2[1]+c1[1]*c2[0]
   
  # Módulo
-  # C = R + i
-  # módulo = $$\sqrt{\left(R<sup>2</sup> + i<sup>2</sup>\right)}$$
+   modulo = (c1[0]*c1[0] + c1[1]*c1[1])**(1/2)
   
  # Conjugado
-   # C = R + i
-   # C = R - i
+   ParteReal = complejo1[0]
+   ParteImagi = complejo1[1]*-1 
  
  # Conversión de cartesiano a polar
-  # C = R + i
-  # p = \sqrt{\left(R<sup>2</sup> + i<sup>2</sup>\right)}
-  # \theta = tan<sup>-1</sup>\left($$\frac{i}{R}$$\right)
+   p = (c1[0]*c1[0] + c1[1]*c1[1])**(1/2)
+   angulo = math.atan(c1[1]/c1[0])
+ 
+ # Conversión de polar a cartesiano
+   ParteReal = a*math.cos(b)
+   ParteImagi = a*math.sin(b)
   
  # Fase
-  # \theta = tan<sup>-1</sup>\left($$\frac{i}{R}$$\right)
+   angulo = math.atan2(c1[1],c1[0])
 
-   
+ # Matriz transpuesta
+   matriz<sub>i,j</sub> = matriz<sub>j,i</sub>
+ 
+ # Norma de una matriz
+   respuesta += (j[0])^2
+   respuesta += (j[1])^2
    
  
  
