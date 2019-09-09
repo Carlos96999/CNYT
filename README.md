@@ -1,7 +1,20 @@
 # Calculadora de números complejos
-Este programa muestra el resultado de unas operaciones realizadas con números complejos las cuales son; suma, resta, división, multiplicación, módulo, conjugado, conversión de cartesiano a polar y viceversa, por último la fase del número complejo. También realizara operaciones haciendo uso de vectores y matrices; como la suma, el inverso, producto escalar por un vector y matriz, matriz transpuesta, conjugada, adjunta entre otros.
-
-
+Este programa muestra el resultado de unas operaciones realizadas con números complejos las cuales son:
+  - Suma                           - Conjugado
+  - Resta                          - Conversión cartesiano a polar
+  - Producto                       - Conversión polar a cartesiano
+  - División                       - Fase
+  - Modulo.
+  
+También fueron agregadas operaciones entre vectores y matrices:
+  - Suma de vectores                                        - Matriz adjunta
+  - Inverso de un vector                                    - Acción de una matriz sobre un vector
+  - Producto de un escalar por un vector                    - Norma de una matriz
+  - Suma de matrices                                        - Distancia de una matriz
+  - Inversa de una matriz                                   - Matriz unitaria
+  - Producto de un escalar por una matriz                   - Matriz hermitania
+  - Matriz transpuesta                                      - Producto tensor
+  - Matriz conjugada
 
 # Instalación
 Debes tener instalado el programa ****python**** en su última versión para poder hacer uso de la librería. Puedes descargarlo del siguiente enlace https://www.python.org/downloads/; al descargarlo vuelves a este enlace y clonas el repositorio, lo abres con el editor de python y ahí puedes empezar a realizar tus pruebas correspondientes.
