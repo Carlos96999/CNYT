@@ -99,6 +99,24 @@ Para hacer uso de las pruebas de unidad debes seguir los siguientes pasos:
  
  
  
+ 
+ 
+ # Clásico a cuántico
+   Esta librería nos muestra el resultado de unso experimentos de computación cuántica los cuales son:
+      - Experimento de las canicas
+      - Probabilidad
+      - Doble rendija
+   
+ # Experimentos
+   Canicas
+      Este experimento está representado en forma de grafos el cual cada casilla representa un contenedor de dichas canicas, y las flechas que salen de un contenedor apuntando a otro es el destino donde estara la canica al realizar el primer click.
+   
+   Probabilidad
+      Este experimento consiste en calcular la probabilidad de que un rayo de fotones pueda tomar una dirección de las cuales este puede acceder.
+   
+   Doble rendija
+      
+   
  # Autor: Carlos Amorocho
  
  
